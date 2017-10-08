@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:paddingTop="4dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/row_image"
+        android:paddingTop="4dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        tools:src="#000000"/>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="72dp">
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Google Requirtment"/>
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            tools:text="Daniyar Kaiyrbolatov"/>
+        <TextView
+            android:id="@+id/last_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:maxLength="72"
+            android:text="Hello Mr.Daniyar We got your app, thans you it is it is ias nsa ndnjns dakmdasdkandasda"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>

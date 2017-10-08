@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#63afa7"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/trsh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:text="Do not hestitate, you have 10 sec of each question to think"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:padding="20dp"/>
+    <SurfaceView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/questionview"
+        android:layout_below="@id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textColor="@color/com_facebook_blue"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="visible"
+        android:text="1. Question what is your name"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

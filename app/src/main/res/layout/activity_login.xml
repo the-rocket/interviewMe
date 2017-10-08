@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bkgfoto">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_logo"
+        android:shadowColor="#00ccff"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:textSize="56sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_below="@id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:textColorHint="#ffcc00"
+                android:textSize="24sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#cc0029"
+                android:textSize="24sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="12sp"
+            android:backgroundTint="@color/com_facebook_blue"
+            android:text="@string/action_sign_in_short"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"/>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="12sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="#ffffff"
+        android:textColor="@color/com_facebook_blue"
+        android:text="@string/signup"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
